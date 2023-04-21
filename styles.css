@@ -21,7 +21,9 @@ body {
     right: 0;
 }
 
-.banner-buttons button {
+.banner-buttons a {
+    display: flex;
+    justify-content: center;
     flex: 1;
     border: 5px solid green;
     color: white;
@@ -29,16 +31,13 @@ body {
     font-size: 35px;
     margin-left: 1%;
     margin-right: 1%;
+    text-decoration: none;
+    font-family: Cambria;
 }
 
-button:hover {
+a:hover {
     background-color: white;
     color: black;
-}
-
-button:active {
-    background-color: #d91614;
-    color: white;
 }
 
 .content-wrapper {
