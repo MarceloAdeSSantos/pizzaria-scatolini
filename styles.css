@@ -3,6 +3,10 @@ body {
     background-color: #574135;
 }
 
+main {
+    font-family: Cambria;
+}
+
 #banner {
     width: 100%;
     height: auto;
@@ -56,10 +60,30 @@ body {
     border: 5px solid #d91614;
 }
 
+.stores-image {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-with-text {
+    display: flex;
+}
+
+.image-with-text img {
+    width: 50%;
+    height: auto;
+}
+
+.image-with-text p {
+    margin-left: 2%;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
 .story {
     padding: 20px;
     width: 50%;
-    font-family: Cambria;
     font-size: 20px;
 }
 
