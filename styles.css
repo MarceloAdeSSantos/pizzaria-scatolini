@@ -61,24 +61,33 @@ main {
 }
 
 .stores-image {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     width: 100%;
 }
 
 .image-with-text {
     display: flex;
+    border: 3px solid black;
+    margin: 1%;
+}
+
+.image-with-text h1 {
+    text-align: center;
+    font-family: 'Lobster';
+    font-weight: lighter, ;
+    margin: 5%;
+}
+
+.image-with-text p {
+    font-size: 20px;
+    text-align: left;
+    margin: 5%;
 }
 
 .image-with-text img {
     width: 50%;
     height: auto;
-}
-
-.image-with-text p {
-    margin-left: 2%;
-    font-size: 1.2rem;
-    text-align: right;
 }
 
 .story {
