@@ -1,4 +1,5 @@
 # Ignorar imagens
+imagens/
 *.png
 *.jpg
 *.jpeg
