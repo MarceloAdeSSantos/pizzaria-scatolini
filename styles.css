@@ -73,6 +73,8 @@ body {
     margin-top: 0.5%;
     margin-left: 2%;
     margin-right: 2%;
+    max-height: auto;
+    overflow: auto;
 }
 
 .image-with-text h1 {
