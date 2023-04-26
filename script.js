@@ -38,5 +38,4 @@ links.forEach(function (link) {
         };
         xhr.send(); // Envia a requisição para o servidor.
     });
-
 });
