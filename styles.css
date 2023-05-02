@@ -129,6 +129,31 @@ h1 {
     line-height: 1;
 }
 
+.food-content {
+    position: relative;
+    margin: 1%;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    display: block;
+    border: 5px solid #d91614;
+}
+
+.food-items {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.food-images {
+    display: flex;
+    border: 3px solid black;
+    margin: 1%;
+}
+
+.food-images img {
+    width: 25%;
+}
+
 /* Estilos para dispositivos móveis. */
 @media (max-width: 600px) {
     .banner-buttons {
