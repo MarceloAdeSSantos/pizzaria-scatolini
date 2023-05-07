@@ -51,6 +51,11 @@ h1 {
     background-color: #d32f2f;
 }
 
+.banner-buttons a.init {
+    background-color: #d32f2f;
+    transition: none;
+}
+
 .banner-buttons a.active {
     background-color: #d32f2f;
 }
@@ -225,7 +230,6 @@ h1 {
     #content-wrapper {
         flex-wrap: wrap;
         box-sizing: border-box;
-        border: 2px solid #d32f2f;
     }
 
     #story,

@@ -6,8 +6,12 @@ buttons.forEach(button => {
     });
 });
 
+// Código antigo ------------------------------------------------------------------------------------------
+
 /* Script para manter a classe 'active' ativada quando você clicar no botão, ou seja, agora o(a) usuário(a)
 irá saber em que página ele(a) está, se baseando na cor em que o botões estão (aqui no caso é vermelho). */
+
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".banner-buttons a");
 
@@ -21,7 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+*/
 
+
+// Código antigo ------------------------------------------------------------------------------------------
+
+/*
 // Implementação do AJAX no projeto.
 var links = document.querySelectorAll(".link-ajax");
 
@@ -37,5 +46,53 @@ links.forEach(function (link) {
             }
         };
         xhr.send(); // Envia a requisição para o servidor.
+    });
+});
+*/
+
+// Aguarda o documento HTML ser carregado antes de executar o código.
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Seleciona todos os links dos botões do banner.
+    const navLinks = document.querySelectorAll(".banner-buttons a");
+
+    // Para cada botão do banner, adiciona um evento de clique.
+    navLinks.forEach(function (link) {
+
+        // Adiciona a classe "active" ao botão "Sobre Nós" se a página atual for a página inicial.
+        if (link.getAttribute("href") === "./paginas/home.html") {
+            link.classList.add("init");
+        }
+
+        // Adiciona um evento de clique para cada botão do banner.
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Previne o comportamento padrão do link.
+
+            // Remove a classe "active" de todos os botões do banner.
+            navLinks.forEach(function (link) {
+                link.classList.remove("init");
+                link.classList.remove("active");
+            });
+
+            // Adiciona a classe "active" ao botão clicado.
+            this.classList.add("active");
+
+            // Cria um objeto XMLHttpRequest para fazer uma requisição HTTP assíncrona.
+            var xhr = new XMLHttpRequest();
+
+            // Define o método HTTP e o URL da página a ser carregada (pegando o valor do atributo 'href' do link clicado).
+            xhr.open("GET", link.getAttribute("href"));
+
+            // Define a função a ser chamada quando a resposta do servidor é recebida.
+            xhr.onload = function () {
+                if (xhr.status === 200) { // Verifica se a resposta é bem-sucedida.
+                    // Atualiza o conteúdo do elemento 'main' com o conteúdo da página carregada.
+                    document.querySelector("main").innerHTML = xhr.responseText;
+                }
+            };
+
+            // Envia a requisição para o servidor.
+            xhr.send();
+        });
     });
 });
