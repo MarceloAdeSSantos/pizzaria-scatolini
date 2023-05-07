@@ -162,13 +162,13 @@ h1 {
 
 @keyframes color-change {
     0% {
-        border-color: red;
-        color: red;
+        border-color: #d32f2f;
+        color: #d32f2f;
     }
 
     33% {
-        border-color: green;
-        color: green;
+        border-color: #388e3c;
+        color: #388e3c;
     }
 
     66% {
@@ -177,8 +177,8 @@ h1 {
     }
 
     100% {
-        border-color: red;
-        color: red;
+        border-color: #d32f2f;
+        color: #d32f2f;
     }
 }
 
@@ -186,7 +186,6 @@ h1 {
 
 .image-with-text {
     display: flex;
-    border: 3px solid black;
     margin: 2%;
     font-size: 20px;
 }

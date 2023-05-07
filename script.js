@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Para cada botão do banner, adiciona um evento de clique.
     navLinks.forEach(function (link) {
 
-        // Adiciona a classe "active" ao botão "Sobre Nós" se a página atual for a página inicial.
+        // Adiciona a classe "init" ao botão "Sobre Nós" se a página atual for a página inicial.
         if (link.getAttribute("href") === "./paginas/home.html") {
             link.classList.add("init");
         }
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         link.addEventListener("click", function (event) {
             event.preventDefault(); // Previne o comportamento padrão do link.
 
-            // Remove a classe "active" de todos os botões do banner.
+            // Remove a classe "init" e/ou "active" de todos os botões do banner.
             navLinks.forEach(function (link) {
                 link.classList.remove("init");
                 link.classList.remove("active");

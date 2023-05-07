@@ -22,7 +22,7 @@ Este projeto é um site de pizzaria que desenvolvi para aprimorar minhas habilid
 Com o feedback que recebi do pessoal do subreddit r/brdev (https://www.reddit.com/r/brdev/) eu fui capaz de fazer algumas melhorias estéticas no site. Obrigado a todos pelas dicas e pelos feedbacks!
 
 <p align="center">
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDhjMzI4MzQwOWExNzliYTJlYTE0MWZkYmE3ZjU5YTAyODFjYzdiNiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/R6jIJKGhZhBRGysYla/giphy.gif" alt="gif mostrando o Ajax, a API OpenStreetMap e as imagens da pizzaria scatolini">
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTZiODcwM2EzY2UzMzFlMWZkYjBlNzBmMjcxNmJmNDk0ZTNhMWU1MSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/8rUHZhltRBkpotDaBB/giphy.gif" alt="gif mostrando a nova atualização do site - o estilo dos botões foi alterado, o código em javascript foi melhorado e etc">
 </p>
 
 Estou sempre aberto a sugestões de melhoria e feedbacks para aprimorar minhas habilidades. Obrigado pela atenção!
